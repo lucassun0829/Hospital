@@ -78,8 +78,8 @@
         data:{
           labels:['Phone','Email Form','Text','Email','TTY/TDD', 'Relay'],
           datasets:[{
-            label:'Numbers',
-            data:[448, 246, 69, 64, 41, 4],
+            label:'Percentage',
+            data:[(448/526).toFixed(2)*100, (246/526).toFixed(2)*100, (69/526).toFixed(2)*100, (64/526).toFixed(2)*100, (41/526).toFixed(2)*100, (4/526).toFixed(2)*100],
             //backgroundColor:'green',
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -115,7 +115,16 @@
               top:50,
               bottom:100,
             }
-          }
+          },
+          scales:{
+            yAxes: [{
+                ticks: {
+                    callback: function(value, index, values) {
+                        return value + '%';
+                    }
+                }
+            }]
+        }
           
           
         }
