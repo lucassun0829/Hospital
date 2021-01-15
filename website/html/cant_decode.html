@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Cannot Decode</title>
+  <h1>
+    The Following Websites Can Not Be Decoded With Python
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list = ['https://www.mercy.net/practice/mercy-hospital-fort-scott']
+    var names = ['MERCY HOSPITAL-FORT SCOTT']
+      outputHTML += "<table>";
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

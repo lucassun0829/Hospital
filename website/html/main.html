@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Communication Modes</title>
+</head>
+<body>
+  <style>
+
+    h2 {
+      font-size: 40px;
+      color:black;
+      position: absolute;
+      left: 200px;
+    }
+    h3 {
+      font-size: 40px;
+      color:black;
+      position: absolute;
+      right: 200px;
+    }
+    h4 {
+      font-size: 40px;
+      color:black;
+      position: absolute;
+      padding-top: 300px;
+      left: 825px;
+    }
+
+    ul{
+      font-size: large;
+      color: rgb(255, 2, 192);
+    }
+    .center{
+      text-align: center;
+    }
+    .allign{
+      position: absolute;
+      left: 400px;
+      padding-top: 70px;
+    }
+    .allign2{
+      position: absolute;
+      right: 500px;
+      padding-top: 70px;
+    }
+    .allign3{
+      position: absolute;
+      left: 825px;
+    
+      padding-top: 370px;
+    }
+    
+    body{
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    </style>
+  <div class="overall">
+    <div class="container">
+      <canvas id="myChart"></canvas>
+    </div>
+  
+    <script>
+      var myChart = document.getElementById('myChart').getContext('2d');
+  
+      // Global Options
+      Chart.defaults.global.defaultFontFamily = 'Lato';
+      Chart.defaults.global.defaultFontSize = 18;
+      Chart.defaults.global.defaultFontColor = '#777';
+  
+      var numberChart = new Chart(myChart, {
+        type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        data:{
+          labels:['Phone','Email Form','Text','Email','TTY/TDD', 'Relay'],
+          datasets:[{
+            label:'Numbers',
+            data:[448, 246, 69, 64, 41, 4],
+            //backgroundColor:'green',
+            backgroundColor:[
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
+            ],
+            borderWidth:1,
+            borderColor:'#777',
+            hoverBorderWidth:3,
+            hoverBorderColor:'#000'
+          }]
+        },
+        options:{
+          title:{
+            display:true,
+            text:'Numbers of Communication Modes',
+            fontSize:25
+          },
+          legend:{
+            display:true,
+            position:'right',
+            labels:{
+              fontColor:'#000'
+            }
+          },
+          layout:{
+            padding:{
+              left:150,
+              top:50,
+              bottom:100,
+            }
+          }
+          
+          
+        }
+      });
+    </script>
+    <div class="center">
+      <h2> List of Hospitals That Do Not Have A ...</h2>
+      <h3> List of Hospitals That Do Have A ...</h3>
+      <h4> List of Bad Websites </h4>
+    </div>
+    <div class="allign">
+      <ul>
+        <li><a href="{{url_for('phone')}}">Phone Number</a></li>
+        <li><a href="{{url_for('email_form')}}">Email Form</a></li>
+        <li><a href="{{url_for('text')}}">Text</a></li>
+        <li><a href="{{url_for('tty')}}">TTY/TDD</a></li>
+        <li><a href="{{url_for('email')}}">Email</a></li>
+        <li><a href="{{url_for('relay')}}">Relay</a></li>
+      </ul>
+    </div>
+    <div class="allign2">
+      <ul>
+        <li><a href="{{url_for('phone2')}}">Phone Number</a></li>
+        <li><a href="{{url_for('email_form2')}}">Email Form</a></li>
+        <li><a href="{{url_for('text2')}}">Text</a></li>
+        <li><a href="{{url_for('tty2')}}">TTY/TDD</a></li>
+        <li><a href="{{url_for('email2')}}">Email</a></li>
+        <li><a href="{{url_for('relay2')}}">Relay</a></li>
+      </ul>
+    </div>
+    <div class="allign3">
+      <ul>
+        <li><a href="{{url_for('bad_website')}}">Blocked or Error</a></li>
+        <li><a href="{{url_for('forbidden')}}">Forbiddened</a></li>
+        <li><a href="{{url_for('not_found')}}">Can't Found Website</a></li>
+        <li><a href="{{url_for('cant_decode')}}">Can't Decode</a></li>
+        <li><a href="{{url_for('javascript')}}">Need Javascript</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li>
+  <li><a href="{{url_for('page')}}">Phone Number</a></li> -->
+</body>
+</html>

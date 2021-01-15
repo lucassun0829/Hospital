@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> TTY2</title>
+  <h1>
+    All the Hospitals That does not Have a TTY/TDD
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list =  ['http://www.carondelet.org/', 'https://www.dignityhealth.org/chandlerregional/', 'http://www.uahealth.com/', 'https://www.orovillehospital.com/', 'http://dignityhealth.org/stelizabethhospital/', 'http://dignityhealth.org/stjosephs-stockton/', 'http://www.dignityhealth.org/frenchhospital/', 'http://www.ucdmc.ucdavis.edu/medicalcenter/', 'http://www.ynhh.org/', 'http://regionalgeneral.com/', 'http://www.nm.org/location/lake-forest-hospital', 'https://www.osfhealthcare.org/st-joseph/', 'http://www.memhosp.com/', 'http://www.bidmc.org/', 'http://www.mwmc.com/', 'http://nantuckethospital.org/', 'http://bonsecoursbaltimore.com/', 'https://www.uhcc.com/', 'http://www.gbmc.org/', 'http://www.dimensionshealth.org/', 'http://www.covenanthealthcare.com/', 'http://www.dartmouth-hitchcock.org/', 'http://www.snhhs.org/', 'http://www.cayugamed.org/', 'http://www.wellspan.org/offices-locations/hospitals/wellspan-gettysburg-hospital/', 'http://www.mainlinehealth.org/riddle', 'https://www.prohealthcare.org/', 'http://www.dds.ca.gov/Sonoma', 'http://www.bidmilton.org/', 'http://www.bartletthospital.org/', 'http://www.mmcenters.com/index.php/facilities/marshall_south', 'http://www.dds.ca.gov/fairview/', 'http://uchc.edu/', 'http://www.floyd.org/', 'http://www.nhrmc.org/', 'https://www.umcsn.com/', 'http://www.nyc.gov/html/hhc/woodhull/html/home/home.shtml', 'http://www.bergerhealth.com/', 'http://www.westernmedanaheim.com/', 'https://www.piedmontmedicalcenter.com/', 'http://www.valleybaptist.net/']    
+    var names = ["CARONDELET ST JOSEPH'S HOSPITAL", 'CHANDLER REGIONAL MEDICAL CENTER', 'BANNER-UNIVERSITY MEDICAL CENTER SOUTH CAMPUS', 'OROVILLE HOSPITAL', 'ST ELIZABETH COMMUNITY HOSPITAL', 'ST JOSEPHS MEDICAL CENTER OF STOCKTON', 'FRENCH HOSPITAL MEDICAL CENTER', 'UNIVERSITY OF CALIFORNIA DAVIS MEDICAL CENTER', 'YALE-NEW HAVEN HOSPITAL', 'REGIONAL GENERAL HOSPITAL WILLISTON', 'NORTHWESTERN LAKE FOREST HOSPITAL', 'ST JOSEPH MEDICAL CENTER', 'MEMORIAL HOSPITAL', 'BETH ISRAEL DEACONESS MEDICAL CENTER', 'METROWEST MEDICAL CENTER', 'NANTUCKET COTTAGE HOSPITAL', 'BON SECOURS HOSPITAL', 'UNION HOSPITAL OF CECIL COUNTY', 'GREATER BALTIMORE MEDICAL CENTER', 'LAUREL REGIONAL MEDICAL CENTER', 'COVENANT MEDICAL CENTER', 'MARY HITCHCOCK MEMORIAL HOSPITAL', 'SOUTHERN NH MEDICAL CENTER', 'CAYUGA MEDICAL CENTER AT ITHACA', 'GETTYSBURG HOSPITAL', 'RIDDLE MEMORIAL HOSPITAL', 'WAUKESHA MEMORIAL HOSPITAL', 'SONOMA DEVELOPMENTAL CENTER', 'BETH ISRAEL DEACONESS HOSPITAL-MILTON INC', 'BARTLETT REGIONAL HOSPITAL', 'MARSHALL MEDICAL CENTER SOUTH', 'FAIRVIEW DEVELOPMENTAL CENTER', 'JOHN DEMPSEY HOSPITAL', 'FLOYD MEDICAL CENTER', 'NEW HANOVER REGIONAL MEDICAL CENTER', 'UNIVERSITY MEDICAL CENTER', 'WOODHULL MEDICAL AND MENTAL HEALTH CENTER', 'BERGER HOSPITAL', 'WESTERN MEDICAL CENTER  ANAHEIM', 'PIEDMONT MEDICAL CENTER', 'VHS BROWNSVILLE HOSPITAL COMPANY, LLC']
+      outputHTML += "<table>";
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

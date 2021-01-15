@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Phone Number</title>
+  <h1>
+    All the Hospitals That does not Have a Phone Number
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list = ['http://baptisthealthalabama.org/', 'http://www.tlrmc.com/', 'https://adirondackhealth.org/adirondack-medical-center/', 'http://www.uhs.net/locations/uhs-wilson-medical-center/', 'http://www.craiggeneralhospital.com/', 'http://www.sentara.com/halifax-southern-virginia/hospitalslocations/locations/sentara-halifax-regional-hospital.aspx', 'http://www.sentara.com/woodbridge-virginia/', 'http://www.stonewalljacksonhospital.com/', 'https://www.ihs.gov/Albuquerque/healthcarefacilities/mescalero/', 'http://www.nyc.gov/html/hhc/bellevue', 'no webpage', 'http://www.mchd.net/', 'http://www.bvhospital.com/', 'http://www.esh.dbhds.virginia.gov/', 'http://www.bakersfieldhearthospital.com/', 'http://www.saintcatherinehospital.com/', 'http://www.oaklandregionalhospital.com/', 'http://fultonmed.com/', 'http://www.sandhillsregional.com/']    
+outputHTML += "<table>";
+    var names = ['WALKER BAPTIST MEDICAL CENTER', 'TWIN LAKES REGIONAL MEDICAL CENTER', 'ADIRONDACK MEDICAL CENTER', 'UNITED HEALTH SERVICES HOSPITALS, INC', 'CRAIG GENERAL HOSPITAL', 'SENTARA HALIFAX REGIONAL HOSPITAL', 'SENTARA NORTHERN VIRGINIA MEDICAL CENTER', 'STONEWALL JACKSON MEMORIAL HOSPITAL', 'MESCALERO PHS INDIAN HOSPITAL', 'BELLEVUE HOSPITAL CENTER', 'PERRY COMMUNITY HOSPITAL', 'MOORE COUNTY HOSPITAL DISTRICT', 'BEAVER VALLEY HOSPITAL', 'EASTERN STATE HOSPITAL', 'BAKERSFIELD HEART HOSPITAL', 'SAINT CATHERINE REGIONAL HOSPITAL', 'OAKLAND REGIONAL HOSPITAL', 'CALLAWAY COMMUNITY HOSPITAL', 'SANDHILLS REGIONAL MEDICAL CENTER']
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
 
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

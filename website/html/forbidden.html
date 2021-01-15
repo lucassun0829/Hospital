@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Forbidden</title>
+  <h1>
+    These Websites Are Forbiddened
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list = ['http://www.avmc-hospital.org/']
+    var names = ['ASHLEY REGIONAL MEDICAL CENTER']
+    outputHTML += "<table>";
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

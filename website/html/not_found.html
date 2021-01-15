@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Not Found</title>
+  <h1>
+    Can Not Find These Websites
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list = ['http://www.northside.com/forsyth', 'http://www.memorialhealth.com/', 'http://www.gradyhealth.org/', 'https://fmolhs.org/lourdesrmc/', 'http://www.stmarysofmichigan.org/', 'http://www.stjohnprovidence.org/', 'http://mayoclinichealthsystem.org/locations/albert-lea', 'http://www.nehealth.com/RedesignCSs/Medical_Care/SAM/', 'https://www.chwchospital.org/', 'http://my.clevelandclinic.org/locations_directions/Regional-Locations/hillcrest-hospital', 'http://www.stclair.org/', 'https://intermountainhealthcare.org/locations/utah-valley-regional-medical-center/', 'https://intermountainhealthcare.org/locations/logan-regional-hospital/', 'http://www.swedish.org/', 'http://www.hfmhealth.org/', 'http://www.challiance.org/', 'http://noconageneral.com/', 'http://alaskaregional.com/', 'http://northwestmed.com/', 'http://www.rockdalemedicalcenter.org/', 'http://www.merithealthnorthwestms.com/', 'http://www.sh-ok.net/', 'http://hcavirginia.com/locations/john-randolph-medical-center/']
+    var names = ['NORTHSIDE HOSPITAL FORSYTH', 'MEMORIAL HEALTH UNIV MED CEN, INC', 'GRADY MEMORIAL HOSPITAL', 'OUR LADY OF LOURDES REGIONAL MEDICAL CENTER, INC', "ST MARY'S OF MICHIGAN MEDICAL CENTER", 'ST JOHN HOSPITAL AND MEDICAL CENTER', 'MAYO CLINIC HEALTH SYSTEM - ALBERT LEA', 'SAMARITAN HOSPITAL', 'COMMUNITY HOSPITALS AND WELLNESS CENTERS', 'HILLCREST HOSPITAL', 'ST CLAIR MEMORIAL HOSPITAL', 'UTAH VALLEY REGIONAL MEDICAL CENTER', 'LOGAN REGIONAL HOSPITAL', 'SWEDISH EDMONDS HOSPITAL', 'HOLY FAMILY MEMORIAL', 'CAMBRIDGE HEALTH ALLIANCE', 'NOCONA GENERAL HOSPITAL', 'ALASKA REGIONAL HOSPITAL', 'NORTHWEST MEDICAL CENTER', 'ROCKDALE MEDICAL CENTER', 'NORTHWEST MISSISSIPPI REGIONAL MEDICAL CENTER', 'SURGICAL HOSPITAL OF OKLAHOMA', 'JOHN RANDOLPH MEDICAL CENTER']
+    outputHTML += "<table>";
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

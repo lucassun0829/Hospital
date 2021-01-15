@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Relay2</title>
+  <h1>
+    All the Hospitals That does not Have a Relay
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list =   ['https://www.floridahospital.com/orlando', 'https://www.floridahospital.com/zephyrhills', 'http://www.somc.org/', 'http://uchealth.com/westchesterhospital/']
+    var names = ['FLORIDA HOSPITAL', 'FLORIDA HOSPITAL ZEPHYRHILLS', 'SOUTHERN OHIO MEDICAL CENTER', 'WEST CHESTER HOSPITAL, LLC']
+      outputHTML += "<table>";
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

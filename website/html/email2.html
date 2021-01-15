@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Email2</title>
+  <h1>
+    All the Hospitals That Do Have a Email Address
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list = [ 'http://www.carondelet.org/', 'http://www.strosehospital.org/', 'https://www.orovillehospital.com/', 'http://www.ucdmc.ucdavis.edu/medicalcenter/', 'https://www.summitmedicalcenter.org/SMC/Home/', 'http://www.echn.org/', 'https://www.bestcare.org/jennie-edmundson/', 'http://www.methodisthospitals.org/', 'http://www.kdhmadison.org/', 'http://www.providencekc.com/', 'http://www.mwmc.com/', 'https://www.uhcc.com/', 'https://www.charlesregional.org', 'http://umshoreregional.org', 'http://straith.org/', 'http://www.parknicollet.com/hospitalsandpartners/methodist-hospital', 'https://www.bestcare.org/methodist-hospital/', 'http://www.nlh.org/', 'http://www.cayugamed.org/', 'http://www.stilwellmemorialhospital.com/', 'http://www.slhn.org/', 'http://www.upmc.com/locations/hospitals/northwest', 'http://www.upmc.com/locations/hospitals/st-margaret', 'http://www.upmc.com/locations/hospitals/magee', 'http://www.anmedhealth.org/', 'http://www.rsfh.com/st-francis-hospital/', 'http://www.huntsvillememorial.com/', 'http://www.nacmedicalcenter.com/', 'http://www.nwhospital.org/', 'http://www.bartletthospital.org/', 'http://www.mmcenters.com/index.php/facilities/marshall_south', 'http://www.uabmedicine.org/locations/uab-hospital', 'http://www.grovehillmemorial.org/', 'http://www.sgmh.org', 'http://hazelhawkins.com/', 'http://uchc.edu/', 'http://www.mghospital.com/', 'third party website listed the phone number and email address of an individual', 'http://www.chcbc.com/', 'http://www.fremonthealth.com/', 'https://www.umcsn.com/', 'http://www.choctawmemorial.com/', 'http://www.washingtonhospital.org/', 'http://wallacethomson.com/', 'http://www.smhtx.com/', 'http://www.lubbockheart.com/', 'http://www.sweetwatermemorial.com/', 'https://www.abrazohealth.com/our-locations/abrazo-scottsdale-campus', 'http://www.avantihospitals.com/community-hospital-of-huntington-park', 'http://www.avantihospitals.com/east-la-doctors-hospital', 
+'http://www.shastaregional.com/', 'http://healthmarkregional.com/', 'http://www.northgeorgiamedicalcenter.com/', 'http://www.saintcatherinehospital.com/', 'http://rapidesregional.com/', 'https://www.hvsh.org/', 'http://www.lincolnsurgery.com/', 'http://communityhospitalokc.com/main-campus', 'https://www.piedmontmedicalcenter.com/', 'https://www.eastcoopermedctr.com/', 'http://www.valleybaptist.net/', 'http://www.nixhealth.com/', 'http://www.baylorlascolinas.com/', 'http://www.sphn.com/']
+    var names = ["CARONDELET ST JOSEPH'S HOSPITAL", 'ST ROSE HOSPITAL', 'OROVILLE HOSPITAL', 'UNIVERSITY OF CALIFORNIA DAVIS MEDICAL CENTER', 'ST ANTHONY SUMMIT MEDICAL CENTER', 'ROCKVILLE GENERAL HOSPITAL', 'METHODIST JENNIE EDMUNDSON', 'METHODIST HOSPITALS INC', "KING'S DAUGHTERS' HEALTH", 'PROVIDENCE MEDICAL CENTER', 'METROWEST MEDICAL CENTER', 'UNION HOSPITAL OF CECIL COUNTY', 'UNIVERSITY OF MD CHARLES REGIONAL  MEDICAL CENTER', 'UNIVERSITY OF MD SHORE MEDICAL CENTER AT EASTON', 'STRAITH HOSPITAL FOR SPECIAL SURGERY', 'PARK NICOLLET METHODIST HOSPITAL', 'THE NEBRASKA METHODIST HOSPITAL', 'NATHAN LITTAUER HOSPITAL', 'CAYUGA MEDICAL CENTER AT ITHACA', 'MEMORIAL HOSPITAL', "ST LUKE'S HOSPITAL BETHLEHEM", 'UPMC NORTHWEST', 'UPMC ST MARGARET', 'MAGEE WOMENS HOSPITAL OF UPMC HEALTH SYSTEM', 'ANMED HEALTH', 'BON SECOURS-ST FRANCIS XAVIER HOSPITAL', 'HUNTSVILLE MEMORIAL HOSPITAL', 'NACOGDOCHES MEDICAL CENTER', 'NORTHWEST HOSPITAL', 'BARTLETT REGIONAL HOSPITAL', 'MARSHALL MEDICAL CENTER SOUTH', 'UNIVERSITY OF ALABAMA HOSPITAL', 
+'GROVE HILL MEMORIAL HOSPITAL', 'SAN GORGONIO MEMORIAL HOSPITAL', 'HAZEL HAWKINS MEMORIAL HOSPITAL', 'JOHN DEMPSEY HOSPITAL', 'MOREHOUSE GENERAL HOSPITAL', 'EAST CARROLL PARISH HOSPITAL', 'COMMUNITY HEALTH CENTER OF BRANCH COUNTY', 'FREMONT HEALTH MEDICAL CENTER', 'UNIVERSITY MEDICAL CENTER', 'CHOCTAW MEMORIAL HOSPITAL', 'WASHINGTON HOSPITAL, THE', 'WALLACE THOMSON HOSPITAL', 'STEPHENS MEMORIAL HOSPITAL', 'LUBBOCK HEART HOSPITAL LP', 'MEMORIAL HOSPITAL SWEETWATER COUNTY', 'ABRAZO SCOTTSDALE CAMPUS', 'COMMUNITY HOSPITAL OF HUNTINGTON PARK', 'EAST LOS ANGELES DOCTORS HOSPITAL', 'SHASTA REGIONAL MEDICAL CENTER', 'HEALTHMARK REGIONAL MEDICAL CENTER', 'NORTH GEORGIA MEDICAL CENTER', 'SAINT CATHERINE REGIONAL HOSPITAL', 'RAPIDES REGIONAL MEDICAL CENTER', 'HURON VALLEY-SINAI HOSPITAL', 'LINCOLN SURGICAL HOSPITAL', 'COMMUNITY HOSPITAL, LLC', 'PIEDMONT MEDICAL CENTER', 'EAST COOPER MEDICAL CENTER', 'VHS BROWNSVILLE HOSPITAL COMPANY, LLC', 'NIX HEALTH CARE SYSTEM', 'BAYLOR SURGICAL HOSPITAL AT LAS COLINAS', 'SIERRA PROVIDENCE EAST MEDICAL CENTER']      
+for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

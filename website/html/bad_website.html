@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Bad Website</title>
+  <h1>
+    These Websites Are Either Blocked or Just DOsen't Exist
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list = ['http://www.northmetromed.com/', 'https://healthy.kaiserpermanente.org/health/care/poc/!ut/p/a1/dY_BToNAEIafpQeOZYaiiN4WTM2CqG2t4l7MQmHZiCzZriW8vSzRQxOd22S-_5v8wCAH1vGTFNxI1fHW7ix4Xye7xyjyCGKUXCDNyMP2MkkQ0YMEmGhVMaNvK53FmQDWc9MsZVcryHtV2ktjTH_joIM1L2Urzbg8SF2VRunRQWDyALk3-a48C5Ou8MNJo6u60pV2v_Rkt4bjrBiGwRVKibZyS_U5xf-INOpoID8n4RXYeZ1w798i3cfrONhQ-_8HQJ9uZuDuKUCkYfqcvlynPuLqF_hnCEL_wYrRb0_39Y4Kslh8A2EMqOs!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/', 'https://healthy.kaiserpermanente.org/health/care/poc/!ut/p/a1/dY_BToNAEIafpQeOZQZQRG-AqVkQta2tuBez0GXZiCzZriW8vUD00MTObTLf_01-oJADbdlJCmakalkz7dT_WCXb5yhyQsQouUKShU-b6yRBRAcSoKJRxYy-uzqLMwG0Y6ZeyrZSkHeqnC61Md2dhRZWrJSNNMPyIDUvjdKDhUDlAXJn1Lk3Exy2hReMGs0rrrm2v_VonwzHWdH3vS2UEg23S_U1xv-J1OpoID8n4Q3oeZ1g590j2cWr2F-T8T_-AuiR9Qw8vPiIJEhf0_1t6iG6f8CFCRG6T1oMXnN6rLZEhIvFD8EhwNU!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/', 'https://healthy.kaiserpermanente.org/health/care/!ut/p/a0/FcdNCoAgEAbQs3iA-Iw21a5TlLMbtGzAP0IKb1-93QNhAyW-xXOVnDh8NwdbCVLb7FriKBYrCCQOZtBa99O_crGPDJNyZ9meO0qM47Mo9QKBX53r/', 'http://www.comhs.org/stmary/', 'http://www.mercymemorial.org/', 'http://www.uofmmedicalcenter.org/', 'http://www.srmc.org/', 'https://www.oswegohealth.org', 'http://www.wyckoffhospital.org/', 'https://www.ohiohealth.com/grant/', 'http://www.medcentral.org/Main/MansfieldHospital.aspx', 'https://www.ohiohealth.com/grady/', 'https://www.ohiohealth.com/dublinmethodist/', 'http://www.houstonmethodist.org/', 'http://www.covenanthospitallevelland.org/', 'http://thebirthhospital.org/', 'http://www.reynoldsmemorial.com/', 'http://fallbrookhealthcaredistrict.net/', 'http://www.phoebeputney.com/', 'http://madisonmemorial.org/', 'http://www.cookcountyhhs.org/locations/provident-hospital/', 'http://www.sequoyahmemorial.com/', 'http://www.ghs.org/', 'http://www.sebastianrivermedical.com/', 'http://mercyweb.org/', 'http://www.elpasospecialtyhospital.com/', 'http://bmcf.com/', 'http://www.toppenishhospital.com/', 'http://www.bluefieldregional.net/']
+    var names = ['NORTH METRO MEDICAL CENTER', 'KAISER FOUNDATION HOSPITAL - PANORAMA CITY', 'KAISER FOUNDATION HOSPITAL FONTANA', 'KAISER FOUNDATION HOSPITAL-MORENO VALLEY', 'ST MARY MEDICAL CENTER INC', 'PROMEDICA MONROE REGIONAL HOSPITAL', 'UNIVERSITY OF MINNESOTA  MEDICAL CENTER, FAIRVIEW', 'SOUTHEASTERN REGIONAL MEDICAL CENTER', 'OSWEGO HOSPITAL', 'WYCKOFF HEIGHTS MEDICAL CENTER', 'GRANT MEDICAL CENTER', 'MEDCENTRAL HEALTH SYSTEM MANSFIELD HOSPITAL', 'GRADY MEMORIAL HOSPITAL', 'DUBLIN METHODIST HOSPITAL', 'METHODIST HOSPITAL,THE', 'COVENANT HOSPITAL LEVELLAND', 'COLUMBIA CENTER', 'REYNOLDS MEMORIAL HOSPITAL', 'FALLBROOK HOSPITAL DISTRICT', 'PHOEBE PUTNEY MEMORIAL HOSPITAL', 'MADISON MEMORIAL HOSPITAL', 'PROVIDENT HOSPITAL OF CHICAGO', 'SEQUOYAH COUNTY CITY OF SALLISAW HOSPITAL AUTHORIT', 'GHS GREENVILLE MEMORIAL HOSPITAL', 'SEBASTIAN RIVER MEDICAL CENTER', 'MERCY HOSPITAL OF DEFIANCE', 'EL PASO SPECIALTY HOSPITAL', 'BAYLOR MEDICAL CENTER AT FRISCO', 'TOPPENISH COMMUNITY HOSPITAL', 'BLUEFIELD REGIONAL MEDICAL CENTER']
+    outputHTML += "<table>";
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

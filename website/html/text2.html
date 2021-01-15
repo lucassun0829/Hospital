@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> text2</title>
+  <h1>
+    All the Hospitals That does not Have a Text
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list = ['https://www.dignityhealth.org/chandlerregional/', 'http://www.uahealth.com/', 'http://dignityhealth.org/stelizabethhospital/', 'http://dignityhealth.org/stjosephs-stockton/', 'https://www.adventisthealth.org/feather-river/', 'http://www.dignityhealth.org/frenchhospital/', 'https://www.floridahospital.com/orlando', 'https://www.adventisthealth.org/castle', 'http://www.nm.org/location/lake-forest-hospital', 'https://www.maplegrovehospital.org/', 'https://www.sehealth.org/', 'http://caldwellmemorial.org/', 'http://www.atlantichealth.org/morristown/', 'http://www.atlantichealth.org/newton/', 'https://www.renown.org/find/location/renown_south_meadows_medical_center/', 'https://my.clevelandclinic.org/locations_directions/Regional-Locations/marymount-hospital', 'http://uchealth.com/westchesterhospital/', 'http://www.schuylkillhealth.com/', 'http://www.rsfh.com/st-francis-hospital/', 'http://www.fayettevillear.va.gov/', 'http://www.tucson.va.gov/', 'http://www.longbeach.va.gov/', 'http://www.grandjunction.va.gov/', 'http://www.connecticut.va.gov/', 'http://www.washingtondc.va.gov/', 'http://www.wilmington.va.gov/', 'http://www.northflorida.va.gov/', 'http://www.atlanta.va.gov/', 'http://www.centraliowa.va.gov/', 'http://www.boise.va.gov/', 'http://www.chicago.va.gov/', 'http://www.northernindiana.va.gov/', 'http://www.topeka.va.gov/', 'http://www.louisville.va.gov/', 'http://www.shreveport.va.gov/', 'http://www.maryland.va.gov/', 'http://www.maine.va.gov/', 'http://www.saginaw.va.gov/', 'http://www.stcloud.va.gov/', 'http://www.stlouis.va.gov/', 'http://www.jackson.va.gov/', 'http://www.montana.va.gov/', "Found phone number on separate website, they don't seem to have a website", 'http://www.fargo.va.gov/', 'http://www.nebraska.va.gov/', 'http://www.newjersey.va.gov/', 'http://www.reno.va.gov/', 'http://www.canandaigua.va.gov/', 'http://www.northport.va.gov/', 'http://www.cleveland.va.gov/', 'http://www.muskogee.va.gov/', 'http://www.portland.va.gov/', 'http://www.lebanon.va.gov/', 'http://www.providence.va.gov/', 'http://www.columbiasc.va.gov/', 'http://www.tennesseevalley.va.gov/', 'http://www.centraltexas.va.gov/', 'http://www.saltlakecity.va.gov/', 'http://www.richmond.va.gov/', 'http://www.whiteriver.va.gov/', 'http://www.spokane.va.gov/', 'http://www.milwaukee.va.gov/', 'http://www.beckley.va.gov/', 'http://www.cheyenne.va.gov/', 'http://www.crmcinc.com/', 'http://www.glh.org/', 'http://www.unchealthcare.org/', 'http://www.evergreenhealth.com/', 'http://baylortrophyclub.com/']      
+    var names = ['CHANDLER REGIONAL MEDICAL CENTER', 'BANNER-UNIVERSITY MEDICAL CENTER SOUTH CAMPUS', 'ST ELIZABETH COMMUNITY HOSPITAL', 'ST JOSEPHS MEDICAL CENTER OF STOCKTON', 'FEATHER RIVER HOSPITAL', 'FRENCH HOSPITAL MEDICAL CENTER', 'FLORIDA HOSPITAL', 'CASTLE MEDICAL CENTER', 'NORTHWESTERN LAKE FOREST HOSPITAL', 'MAPLE GROVE HOSPITAL', 'SOUTHEASTHEALTH', 'CALDWELL MEMORIAL HOSPITAL', 'MORRISTOWN MEDICAL CENTER', 'NEWTON MEDICAL CENTER', 'RENOWN SOUTH MEADOWS MEDICAL CENTER', 'MARYMOUNT HOSPITAL', 'WEST CHESTER HOSPITAL, LLC', 'SCHUYLKILL MEDICAL CENTER - SOUTH JACKSON STREET', 'BON SECOURS-ST FRANCIS XAVIER HOSPITAL', 'FAYETTEVILLE AR VA MEDICAL CENTER', 'VA S. ARIZONA HEALTHCARE SYSTEM', 'VA LONG BEACH HEALTHCARE SYSTEM', 'GRAND JUNCTION VA MEDICAL CENTER', 'WEST HAVEN VA MEDICAL CENTER', 'WASHINGTON DC VA MEDICAL CENTER', 'WILMINGTON VA MEDICAL CENTER', 'VA NORTH FLORIDA/SOUTH GEORGIA HEALTHCARE SYSTEM', 'DECATUR (ATLANTA) VA MEDICAL CENTER', 'VA CENTRAL IOWA HEALTHCARE SYSTEM', 'BOISE VA MEDICAL CENTER', 'JESSE BROWN VA MEDICAL CENTER - VA CHICAGO', 'VA N. INDIANA HEALTHCARE SYSTEM - MARION', 'VA EASTERN KANSAS HEALTHCARE SYSTEM', 'LOUISVILLE VA MEDICAL CENTER', 'OVERTON BROOKS VA MEDICAL CENTER - SHREVEPORT', 'VA MARYLAND HEALTHCARE SYSTEM - BALTIMORE', 'TOGUS VA MEDICAL CENTER', 'SAGINAW VA MEDICAL CENTER', 'ST CLOUD VA MEDICAL CENTER', 'ST LOUIS-JOHN COCHRAN VA MEDICAL CENTER', 'G.V. (SONNY) MONTGOMERY VA MEDICAL CENTER JACKSON', 'VA MONTANA HEALTHCARE SYSTEM', 'CHEROKEE INDIAN HOSPITAL AUTHORITY', 'FARGO VA MEDICAL CENTER', 'OMAHA VA MEDICAL CENTER - VA NEBRASKA WESTERN IOWA', 'VA NEW JERSEY HEALTH CARE SYSTEM', 'VA SIERRA NEVADA HEALTHCARE SYSTEM', 'CANANDAIGUA VA MEDICAL CENTER', 'NORTHPORT VA MEDICAL CENTER', 'CLEVELAND-WADE PARK VA MEDICAL CENTER', 'MUSKOGEE VA MEDICAL CENTER', 'PORTLAND VA MEDICAL CENTER', 'LEBANON VA MEDICAL CENTER', 'PROVIDENCE VA MEDICAL CENTER', 'COLUMBIA SC VA MEDICAL CENTER', 'VA MIDDLE TENNESSEE HEALTHCARE SYSTEM', 'TEMPLE VA MEDICAL CENTER - VA CENTRAL TEXAS', 'VA SALT LAKE CITY HEALTHCARE - GEORGE E. WAHLEN VA', 'RICHMOND VA MEDICAL CENTER', 'WHITE RIVER JCT VA MEDICAL CENTER', 'SPOKANE VA MEDICAL CENTER', 'MILWAUKEE VA MEDICAL CENTER', 'BECKLEY VA MEDICAL CENTER', 
+'CHEYENNE VA MEDICAL CENTER', 'COFFEYVILLE REGIONAL MEDICAL CENTER', 'GREENWOOD LEFLORE HOSPITAL', 'UNIVERSITY OF NORTH CAROLINA HOSPITAL', 'EVERGREEN HOSPITAL MEDICAL CENTER', 'BAYLOR MEDICAL CENTER AT TROPHY CLUB']
+    outputHTML += "<table>";
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>

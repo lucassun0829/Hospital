@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Javascript</title>
+  <h1>
+    These WEbsites Need Javascrpt Enabled Inorder To Webscrape Fully
+  </h1>
+</head>
+<body>
+  <div id="output"></div>
+  <script>
+    var outputHTML = "";
+    var list =['https://www.stmarysdecatur.com/', 'http://www.steliz.org/', 'https://www.carilionclinic.org/']
+    var names = ['ST MARYS HOSPITAL', 'ST ELIZABETH HOSPITAL', 'CARILION FRANKLIN MEMORIAL HOSPITAL']
+    outputHTML += "<table>";
+      for(var i = 0; i <names.length;i++){
+        outputHTML += "<tr>";
+        outputHTML +="<a href = " + list[i] + ">" + "<li>" + names[i] +"</li>" + "</a>";
+        outputHTML += "</tr>";
+      }
+      outputHTML += "</table>";
+      document.getElementById("output").innerHTML = outputHTML;
+  </script>
+
+  <style>
+    h1{
+      text-align: center;
+      color:rgb(0, 0, 0)
+    }
+    body{
+      font-size: 20px;
+      color: darkred;
+      background-color: rgb(206, 201, 139);
+    }
+  </style>
+
+
+</body>
+</html>
