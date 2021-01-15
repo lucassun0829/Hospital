@@ -8,15 +8,15 @@ No prior study, to our knowledge, has assessed extent to which a nationally repr
 
 # Description
 The project contains a python program that web scrape hospital websites and detect wheter the websites contain a list a communication modes. The second part of the project is displaying the data onto a python web framework. 
-- Hospital.py
 
-The hospital.py is the main python program which do the maain webs craping process. The program first pulls out information in a xlsx file of a list of websites, then it loop through the list of website and check whether of not the website contains a certain comunication modes. A lsit of communication modes that the program checks include: phone number, email, email form, TTY/TDD, text,and video relay. At the end, the program also record the web scraping information and put a "1" if a website have the communication modes and "0" if a webstie dosen't have the communication modes in the xlsx file. The prograam also record if the website dosen't exist, has any issue such as incorrect URL or blocked website, and websites that just simply block web scraping. 
-- main.py
+Hospital.py
+- The hospital.py is the main python program which do the maain webs craping process. The program first pulls out information in a xlsx file of a list of websites, then it loop through the list of website and check whether of not the website contains a certain comunication modes. A lsit of communication modes that the program checks include: phone number, email, email form, TTY/TDD, text,and video relay. At the end, the program also record the web scraping information and put a "1" if a website have the communication modes and "0" if a webstie dosen't have the communication modes in the xlsx file. The prograam also record if the website dosen't exist, has any issue such as incorrect URL or blocked website, and websites that just simply block web scraping. 
 
-The main.py uses the Flask library to create a website that display the web scraping data. The website includes a graph and multiple links to other websites that include lists of websites that either contains a certain communication modes or dosent contains a certain communication modes. 
-- html folder
+Main.py
+- The main.py uses the Flask library to create a website that display the web scraping data. The website includes a graph and multiple links to other websites that include lists of websites that either contains a certain communication modes or dosent contains a certain communication modes. 
 
-The html folder contains all the HTML file that are being used for the website part. 
+Html folder
+- The html folder contains all the HTML file that are being used for the website part. 
 
 # Library Used and Installation
 For Reading Data:
